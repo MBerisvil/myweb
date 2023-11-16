@@ -1,0 +1,70 @@
+{% extends 'portfolioapp/base.html' %}
+
+{% load static %}
+    
+ 
+{% block container %}
+
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+          <br><br><br>
+          <h4>Sobre Mi</h4>
+          <h2 style="font-weight: bold"><em>Hola, soy Mauricio.</em></h2>
+          <p>Soy Mauricio, de 29 años que viene en Córdoba, Argentina y actualmente me encuento trabajando en 
+            el área de sistemas como gestor de incidentes y servicios.
+          </p>
+          <br>
+          <p>Hace un tiempo venia sintiendome en una zona de confort en la que estaba realmente comodo, pero decidi 
+            salir de ella. A principios del 2023 comenzar a estudiar un nuevo lenguaje de programación, analisis de datos, entre otras 
+            áres de sistemas.
+          </p>
+          <br>
+          <p>Siempre quiero aprender más y hacer más. También creo firmemente que nunca debemos llegar a un acuerdo.
+             ¡Soy trabajador, curioso, apasionado, comprometido y aprendo rápido!</p>
+             <div class="row row-cols-6">
+              <div class="col" >
+                <h4 style="font-weight: bold">Enlaces</h4>
+              </div>
+              <div class="col" style="text-aling:left">
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none" href="https://www.linkedin.com/in/berisvilmauricio/">&nbsp;&nbsp;&nbsp;<em>Linkedin</em></a>
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none"  href="">&nbsp;&nbsp;&nbsp;<em>GitHub</em></a>
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none" href="{% static 'portfolioapp/pdf/cv.pdf' %}">&nbsp;&nbsp;&nbsp;<em>CV</em></a>
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black;text-decoration:none" href="mailto:berisvilmauricio@gmil.com">&nbsp;&nbsp;&nbsp;<em>berisvilmauricio@gmail.com</em></a>
+              </div>
+              <div class="col">
+              </div>
+              <div class="col">
+              </div>
+              <div class="col">
+            </div>
+          </div>
+
+        </div>
+        <!--<table class="table table-responsive">
+          <thead class="thead-dark " >
+            <tr>
+                <th>Enlaces</th>
+            </tr>
+        </thead>
+        <tr>
+          <td><a href="">Linkedin</a><br>
+          <a href="">GitHub</a><br>
+          <a href="">Instagram</a></td>
+        </tr>
+        </table>-->
+      </div>
+      <div class="col-lg-6">
+        <div class="banner_content">
+          <div class='home_right_img'>
+            <img src="{% static 'portfolioapp\img\personal1.png' %}" style="height:45em; width:38em; border-radius: 5em 2px 5em 2px;" alt="">
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+{% endblock %}
